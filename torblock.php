@@ -364,7 +364,7 @@
 	
 		// changed
 		foreach ($all_requests as $request){
-			if (match_address() && (in_array($request, array_keys($_POST)) || in_array($request, array_keys($_GET)))){
+			if (match_address() && (in_array(trim($request), array_keys($_POST)) || in_array(trim($request), array_keys($_GET)))){
 				$check = true;
 				break;
 			}
