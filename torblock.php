@@ -239,15 +239,30 @@
 		
 		if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") == $table_name){
 			
-			$user_address = $_SERVER['REMOTE_ADDR'];
-			$user2long = ip2long($user_address);
 			
-			$tor_address = $wpdb->get_row("SELECT * FROM $table_name WHERE `ip`=$user2long");
+			if ( isset( $_SERVER['REMOTE_ADDR'] ) ){
+				
+				$user_address = $_SERVER['REMOTE_ADDR'];
+				$user2long = ip2long($user_address);
 			
-			if ($tor_address !== NULL){
-				$check = true;
-			}			
-		
+				$tor_address = $wpdb->get_row("SELECT * FROM $table_name WHERE `ip`=$user2long");
+			
+				if ($tor_address !== NULL){
+					return true;
+				}
+			}
+
+			if ( isset( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ){
+				$user_address = $_SERVER['HTTP_X_FORWARDED_FOR'];
+				
+				$user2long = ip2long($user_address);
+			
+				$tor_address = $wpdb->get_row("SELECT * FROM $table_name WHERE `ip`=$user2long");
+			
+				if ($tor_address !== NULL){
+					return true;
+				}	
+			}
 		}else{
 			wp_die( __('Table with ip addresses from tor exit list does not exist.'));
 		}	
