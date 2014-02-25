@@ -26,7 +26,7 @@ With this plugin you can apply following constraints to the Tor visitors:
 - Administration   (Tor users can access administration panel)
 - Request   (Tor users can send POST requests)
 
-Or to ban any action by its name/key e.g. not allow accessing resources defined by some GET or POST key. 
+Or to ban any action by its name / key e.g. not allow accessing resources defined by some GET or POST key. 
 
 
 == Installation ==
