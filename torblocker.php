@@ -73,7 +73,7 @@
 		ob_start(); ?>
 			<div class="wrap">
 				<h1>Tor Blocker Settings</h1>
-				<a href="http://hqpeak.com/torexitlist/" target="_blank"><strong>Plugin page</strong></a>
+				<a href="http://pike.hqpeak.com/" target="_blank"><strong>Plugin page</strong></a>
 				<br/><br/>
 				<h2 class="nav-tab-wrapper">
 					<a href="?page=tor_blocker_menu&tab=main" class="nav-tab <?php echo $active_tab == 'main' ? 'nav-tab-active' : ''; ?>">General</a>
@@ -84,7 +84,7 @@
 					<?php settings_fields('torblockergroup'); ?>					
 					<p>		
 						<label><big><strong>Update Tor block list:</strong></big></label><br />
-						<label><small>Default is free version of the tor exit list service. <a href="http://hqpeak.com/torexitlist/" target="_blank">Learn more</a> or get <a href="http://hqpeak.com/torexitlist/account/" target="_blank">premium service</a> access.</small></label><br />
+						<label><small>Default is free version of the tor exit list service. <a href="http://pike.hqpeak.com/" target="_blank">Learn more</a> or get <a href="http://pike.hqpeak.com/account/" target="_blank">premium service</a> access.</small></label><br />
 						<input type="text" name="torblockersettings[default]" value="<?php echo $tor_blocker_options['default']; ?>" size="40" />
 					</p>
 					<br />
