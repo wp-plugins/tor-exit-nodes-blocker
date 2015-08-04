@@ -8,7 +8,7 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Tor Blocker stands for limiting actions to the users that came from Tor exit nodes. 
+Tor Blocker stands for limiting actions to the users that came from Tor nodes. 
  
 == Description ==
 
