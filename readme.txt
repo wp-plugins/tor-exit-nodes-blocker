@@ -15,7 +15,8 @@ Tor Blocker stands for limiting actions to the users that came from Tor nodes.
 Most of the time Tor exit nodes and another .onion web proxies are used to enumerate vulnerabilities of our online product, to perform attack or to be used as a spam source.
 This plugin allow us to limit the actions that coud be performed by the users that are coming from a Tor nodes using http://pike.hqpeak.com free service.
 Could be upgraded to premium (from September) or could be set up any url to service that will give you response in the described json format. 
-Premium list is updated on every 5 minutes, free on 5 h and has its own caching mechanism so isn't affect the speed of the WP instance.  
+Premium list is updated on real time, free on 5 h and has its own caching mechanism so isn't affect the speed of the WP instance.
+In case you need the realtime Tor blocking service feel free to contact us at contact [at] hqpeak [d0t] com 
 
 With this plugin you can apply following constraints to the Tor visitors:
 
