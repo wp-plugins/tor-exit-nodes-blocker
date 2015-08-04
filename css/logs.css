@@ -1,0 +1,60 @@
+@import url('http://fonts.googleapis.com/css?family=Varela');
+
+.logs > body {
+	font-family: 'Valera', sans-serif;
+}
+
+.logs {
+	padding: 40px;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.logs > h1, .logs > h2 {
+	text-align: center;
+}
+
+table {
+	padding-top: 20px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	background-color: #d9d9d9;
+	padding: 7px;
+}
+
+td {
+	padding: 4px;
+}	
+
+th, td {
+	border: 1px solid #d9d9d9;
+	width: auto;
+	max-width: 560px;
+} 
+
+td:first-child, td:nth-child(4) {
+	text-align: center;
+}
+
+#deleteBtn {
+	padding: 0;
+	background-color: #f1f1f1;
+	color: #c00000;
+	border: none;
+	outline: none;
+}
+
+#checkAll {
+	color: #3e73b6;
+}
+
+#deleteBtn, #checkAll {
+	cursor: pointer;
+	font-size: 14px;
+	padding-bottom: 10px;
+}

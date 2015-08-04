@@ -3,8 +3,8 @@ Contributors: hqpeak
 Donate link: http://hqpeak.com/
 Tags: Tor, spam, security
 Requires at least: 3.8.1
-Tested up to: 3.8.1
-Stable tag: 1.0
+Tested up to: 4.2.3
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,9 +12,9 @@ Tor Blocker stands for limiting actions to the users that came from Tor exit nod
  
 == Description ==
 
-Most of the time Tor exit nodes are used to enumerate vulnerabilities of our online product, to perform attack or to be used as a spam source.
-This plugin allow us to limit the actions that coud be performed by the users that are coming from a Tor exit nodes using http://hqpeak.com/torexitlist/ free service.
-Could be upgraded to premium or could be set up any url to service that will give you response in the described json format. 
+Most of the time Tor exit nodes and another .onion web proxies are used to enumerate vulnerabilities of our online product, to perform attack or to be used as a spam source.
+This plugin allow us to limit the actions that coud be performed by the users that are coming from a Tor nodes using http://pike.hqpeak.com free service.
+Could be upgraded to premium (from September) or could be set up any url to service that will give you response in the described json format. 
 Premium list is updated on every 5 minutes, free on 5 h and has its own caching mechanism so isn't affect the speed of the WP instance.  
 
 With this plugin you can apply following constraints to the Tor visitors:
@@ -26,8 +26,11 @@ With this plugin you can apply following constraints to the Tor visitors:
 - Administration   (Tor users can access administration panel)
 - Request   (Tor users can send POST requests)
 
-Or to ban any action by its name / key e.g. not allow accessing resources defined by some GET or POST key. 
+Or to ban any action by its name / key e.g. not allow accessing resources defined by some GET or POST key.
+Un checking all of the boxes will block all of the requests to your wordpress. 
 
+Update: Now you can show user friendly message to the Tor visitor and/or you can
+log all of their actions.
 
 == Installation ==
 
@@ -76,9 +79,13 @@ so the tor user is stopped before reaching your site.
 
 = 1.0 =
 This is the initial released version.
-
+= 1.1 =
+Free service improved to cover all of the known active Tor nodes seen on the network 5 hours ago. Premnium service delivers realtime results. 
 
 == Upgrade Notice ==
 
 = 1.0 =
 Just released in public.
+= 1.1 =
+Improved service, logging features, widget, user friendly custom message
+
