@@ -1,15 +1,15 @@
 <?php
 	/*
 	 * Plugin Name: Tor Blocker
-	 * Plugin URI: http://hqpeak.com/torexitlist/
-	 * Description: Block Tor exit nodes 
-	 * Version: 1.0
+	 * Plugin URI: http://pike.hqpeak.com
+	 * Description: Block Tor nodes 
+	 * Version: 1.1
 	 * Author: HQPeak
 	 * Author URI: http://hqpeak.com
 	 * License: GPL2
 	 */
 
-	/*  Copyright 2014  HQPeak  (email: contact@hqpeak.com)
+	/*  Copyright 2015  HQPeak  (email: contact@hqpeak.com)
 	
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
